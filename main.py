@@ -8,6 +8,12 @@ def initColonie(coloniePresent):
     coloniePresent[2][4] = 'X'
     coloniePresent[3][4] = 'X'
 
+    coloniePresent[15][17] = 'X'
+    coloniePresent[15][18] = 'X'
+    coloniePresent[14][18] = 'X'
+    coloniePresent[14][19] = 'X'
+    coloniePresent[13][17] = 'X'
+
     coloniePresent[0][10] = 'X'
     coloniePresent[0][11] = 'X'
     coloniePresent[0][12] = 'X'
@@ -134,11 +140,11 @@ def getEtat(Cellule):
 
 if __name__ == '__main__':
     start = input("Appuyer sur Enter pour démarrer !")
-    coloniePresent = initcoloniePresent(20, 20)
+    coloniePresent = initcoloniePresent(25, 25)
     coloniePresent = initColonie(coloniePresent)
     generation = 1
-    population = 0
-    while True:
+    population = None
+    while population != 0:
         affichageTableau(coloniePresent)
         print(f"\nGénération : {generation}")
         print(f"Cellules : {population}")
