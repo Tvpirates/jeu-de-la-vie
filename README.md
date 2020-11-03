@@ -7,7 +7,9 @@ Projet Algorithmie licence Pro Amiens
 Le jeu de la vie a été réalisé dans le cadre d'un projet d'algorithmie pour la formation de licence professionnelle RGI à l'IUT d'Amiens.
 
 ## Analyse Descendante
+lien : http://images.xelyos.fr/git/jeu-de-la-vie/jeu-de-la-vie.png
 ![Visualisation Projet](http://images.xelyos.fr/git/jeu-de-la-vie/jeu-de-la-vie.png)
 
 ## Aperçu
-![Visualisation Projet](http://images.xelyos.fr/git/jeu-de-la-vie/preview.gif)
+lien : http://images.xelyos.fr/git/jeu-de-la-vie/preview.gif
+![Visualisation Projet](http://images.xelyos.fr/git/jeu-de-la-vie/)
