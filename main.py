@@ -143,11 +143,21 @@ if __name__ == '__main__':
     coloniePresent = initcoloniePresent(25, 25)
     coloniePresent = initColonie(coloniePresent)
     generation = 1
-    population = None
-    while population != 0:
+    population = 0
+    run = True
+    oldGen = 0
+    cptGent = 0
+    while run:
         affichageTableau(coloniePresent)
         print(f"\nGénération : {generation}")
         print(f"Cellules : {population}")
         generation += 1
+        oldGen = population
         coloniePresent, population = evolutionPopulation(coloniePresent)
+        if population == 0 or cptGent == 10:
+            run = False
+        if oldGen == population:
+            cptGent += 1
+        else:
+            cptGent += 0
         time.sleep(0.2)
